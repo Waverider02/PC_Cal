@@ -5,10 +5,13 @@
 外部环境依赖: COMSOL Multiphysics > 6.0 (含波动光学模块)
 
 **环境搭建**
+
 1.pip install -r requirement.txt
+
 2.安装COMSOL Multiphysics > 6.0 (含波动光学模块) https://cn.comsol.com/
 
 **计算参数设置**
+
 在make_dataset.py设置合适几何参数
 
 >   processor_num = 4 # 设置进程数
