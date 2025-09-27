@@ -6,13 +6,13 @@
 
 **环境搭建**
 
-1.pip install -r requirement.txt
+1. pip install -r requirement.txt
 
-2.安装COMSOL Multiphysics > 6.0 (含波动光学模块) https://cn.comsol.com/
+2. 安装COMSOL Multiphysics > 6.0 (含波动光学模块) https://cn.comsol.com/
 
 **计算参数设置**
 
-在make_dataset.py设置合适几何参数
+1. 在make_dataset.py设置合适几何参数
 
 >   processor_num = 4  # 设置进程数
 >
@@ -22,7 +22,7 @@
 >
 >  a = 295e-9  # 设置晶格常数
 
-在clean_dataset.py中设置合适的筛选条件
+2. 在clean_dataset.py中设置合适的筛选条件
 
 >mask = ~((freq<4e-4) *(light_cone_reshape>0.0001))
 >
@@ -40,7 +40,7 @@
 >
 >mask += mask_hold *((freq>0.4116) *(freq<0.4117))  # 手动添加
 
-在check_field.py中设置k点id,模式id
+3. 在check_field.py中设置k点id,模式id
 
 >k_lp = 0  # k点id 0-121 (Gamma-X-M-Gamma)
 >
